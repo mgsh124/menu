@@ -8,7 +8,7 @@ import { MenuItem } from './interfaces/menu-item';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'menu';
+  title = 'Welcome to Chirpus Pizza';
 
   menuItem: MenuItem[] = [
     {item: 'Chicken Fingers', category: Category[Category.Dinner], price: 11.99},
