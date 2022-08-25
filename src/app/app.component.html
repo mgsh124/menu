@@ -272,6 +272,10 @@
     width: 1920px;
   }
 
+  .padding10 {
+    padding: 10px;
+  }
+
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
@@ -328,7 +332,7 @@
 <div class="content" role="main">
 
   <!-- Resources -->
-  <h2>Welcome to Chirpus Pizza</h2>
+  <h1>Welcome to Chirpus Pizza</h1>
   <table>
     <thead>
       <th>Item</th>
@@ -337,9 +341,9 @@
     </thead>
     <tbody>
       <tr *ngFor="let item of menuItem">
-        <td>{{item.item}}</td>
-        <td>{{item.category}}</td>
-        <td>{{item.price | currency}}</td>
+        <td class="padding10">{{item.item}}</td>
+        <td class="padding10">{{item.category}}</td>
+        <td class="padding10">{{item.price | currency}}</td>
       </tr>
     </tbody>
   </table>
